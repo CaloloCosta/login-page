@@ -7,25 +7,28 @@
 
 html{
     height: 100%;
-    background: linear-gradient(180deg, #8EC5FC 20%, rgba(134, 72, 193, 0) 100%);
+    background: linear-gradient(to right, #fc466b, #3f5efb); 
     background-repeat:no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 
-.main{
-    margin: auto;
-    margin-top: 120px;
+.flex-container{
+    display: flex;
+    flex-direction: column;
     border-radius: 10px;
-    border: solid 1px #fff;
+    /* border: solid 1px #fc466b; */
     width: 400px;
     background-color: rgba(255, 255, 255, .4);
     padding: 80px 50px;
     text-align: center;
-    color: #000;
+    color: #fff;
 }
 
 h1{
-    font-weight:lighter;
+    font-weight: normal;
 }
 
 form{
@@ -50,23 +53,43 @@ input[type=text],input[type=password]{
 }
 
 ::placeholder{
-    color: #000;
+    color: #fff;
     opacity: 1;
     
 }
 
 input[type=submit]{
-    background-color: #000;
+    background-color: #fc466b;
     color: #fff;
     cursor: pointer;
 }
 
-a{
-    text-decoration: none;
-    color: #000;
-    margin: 5px 25px;
+input[type=submit]:hover{
+    box-shadow: 0 0 11px rgba(33,33,33,.2); 
 }
 
 .imgs{
-    margin-top: 50px;
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-around;   
+    padding: 10px;
+}
+
+a{
+    text-decoration: none;
+    color: #fff;
+}
+
+footer{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+    color: #fff;
+}
+
+footer a{
+    font-weight: bold;
 }
